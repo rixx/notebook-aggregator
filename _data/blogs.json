@@ -1,0 +1,27 @@
+[
+    {
+        "url": "https://notebook.drmaciver.com/",
+        "name": "DRMacIver's Notebook",
+        "feed": "https://notebook.drmaciver.com/feed.xml",
+        "description": "Thoughts from David R. MacIver",
+        "autors": [
+            {
+                "name": "David R. MacIver",
+                "twitter": "DRMacIver"
+            }
+        ]
+    },
+    {
+        "url": "https://ramble.rixx.de/",
+        "name": "ramble.rixx.de",
+        "feed": "https://ramble.rixx.de/feed.atom",
+        "autors": [
+            {
+                "name": "Tobias Kunze",
+                "twitter": "rixxtr",
+                "url": "https://rixx.de",
+                "email": "r@rixx.de"
+            }
+        ]
+    }
+]
