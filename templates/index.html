@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p>This is a list of known notebook blogs. If you want to add your blog, please <a
+href="https://twitter.com/rixxtr" rel=nofollow>contact me</a>. If you have
+a GitHub account, you can also open an <a
+href="https://github.com/rixx/notebook-aggregator" rel=nofollow>Issue or
+PR</a>.</p>
+
+<p>You can also follow the <a href="/feed.xml">aggregated feed</a>.</p>
+
+{%- for blog in blogs %}
+    <section>
+        <h3><a href="{{ blog.url }}">{{ blog.name }}</a></h3>
+        {% if blog.authors %}<div class="authors">by
+            {% for author in blog.authors %}
+            {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}
+            {% if author.twitter %} // <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>{% endif %}
+            {% endfor %}
+        </div>{% endif %}
+        {% if blog.last_post %}Last post: <a href="{{ blog.last_post.link }}">{{ blog.last_post.title }}</a> <span class="muted">{{ blog.sort_date | render_date }}</span>{% endif %}
+    </section>
+{%- endfor %}
+{% endblock %}
