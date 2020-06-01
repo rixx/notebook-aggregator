@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://notebooks.rixx.de/feed.xml</id>
+  <title>Notebook blog aggregator</title>
+  <updated>{{ feed_entries[0].updated }}</updated>
+  <link href="https://notebooks.rixx.de/" rel="alternate"/>
+  <link href="https://notebooks.rixx.de/feed.xml" rel="self"/>
+  {% for entry in feed_entries %}
+  <entry>
+    <title>{{ entry.title }}</title>
+    <author><name>{{ entry.author }}</name></author>
+    {% for link in entry.links %}
+    <link href="{{ link.href }}" {% if link.rel %}rel="{{ link.rel }}"{% endif %} {% if link.type %}type="{{ link.type }}"{% endif %} />
+    {% endfor %}
+    <id>{{ entry.id }}@notebooks.rixx.de</id>
+    <updated>{{ entry.updated or entry.published }}</updated>
+    {% if entry.summary and not entry.content %}<summary>{{ entry.summary|e }}</summary>{% endif %}
+    {% if entry.content and entry.content[0] and entry.content[0].value %}<content type="html">{{ entry.content[0].value|e }}</content>{% endif %}
+  </entry>
+  {% endfor %}
+</feed>
