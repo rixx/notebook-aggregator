@@ -4,7 +4,7 @@
         "name": "DRMacIver's Notebook",
         "feed": "https://notebook.drmaciver.com/feed.xml",
         "description": "Thoughts from David R. MacIver",
-        "autors": [
+        "authors": [
             {
                 "name": "David R. MacIver",
                 "twitter": "DRMacIver"
@@ -14,8 +14,8 @@
     {
         "url": "https://ramble.rixx.de/",
         "name": "ramble.rixx.de",
-        "feed": "https://ramble.rixx.de/feed.atom",
-        "autors": [
+        "feed": "https://ramble.rixx.de/feed.xml",
+        "authors": [
             {
                 "name": "Tobias Kunze",
                 "twitter": "rixxtr",
