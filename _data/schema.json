@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/denog/chatterliste/blob/master/_data/schema.json",
+    "description": "An address similar to http://microformats.org/wiki/h-card",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "url": {
+                "type": "string"
+            },
+            "name": {
+                "type": "string"
+            },
+            "feed": {
+                "type": "string"
+            },
+            "authors": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "type": "string"
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "twitter": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["name"]
+                }
+            },
+            "description": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "url",
+            "name"
+        ]
+    },
+    "uniqueItems": true,
+    "examples": [
+        {
+            "url": "https://notebook.drmaciver.com/",
+            "name": "DRMacIver's Notebook",
+            "feed": "https://notebook.drmaciver.com/feed.xml",
+            "description": "Thoughts from David R. MacIver",
+            "autors": [
+                {
+                    "name": "David R. MacIver",
+                    "twitter": "DRMacIver"
+                }
+            ]
+        }
+    ]
+}
