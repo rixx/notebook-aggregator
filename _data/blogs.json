@@ -23,5 +23,16 @@
                 "email": "r@rixx.de"
             }
         ]
+    },
+    {
+        "url": "https://notebook.lisamcnulty.co.uk/",
+        "name": "Lisa's Notebook",
+        "description": "Writing Exercises by Lisa McNulty",
+        "feed": "https://notebook.lisamcnulty.co.uk/index.xml",
+        "authors": [
+            {
+                "name": "Lisa McNulty"
+            }
+        ]
     }
 ]
