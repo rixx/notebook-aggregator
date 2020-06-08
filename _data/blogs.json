@@ -34,5 +34,16 @@
                 "name": "Lisa McNulty"
             }
         ]
+    },
+    {
+        "url": "https://rambling.malignat.us",
+        "name": "Mordecai's Ramblings",
+        "description": "More or less creative writing.",
+        "feed": "https://rambling.malignat.us/feed.xml",
+        "authors": [
+            {
+                "name": "Az"
+            }
+        ]
     }
 ]
