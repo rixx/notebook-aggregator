@@ -42,7 +42,9 @@
         "feed": "https://rambling.malignat.us/feed.xml",
         "authors": [
             {
-                "name": "Az"
+                "name": "Az",
+                "twitter": "m_malignatus",
+                "email": "mordecai@malignat.us"
             }
         ]
     }
