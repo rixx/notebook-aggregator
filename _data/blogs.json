@@ -55,7 +55,8 @@
         "feed": "https://notes.jml.io/feed.xml",
         "authors": [
             {
-                "name": "Jonathan M. Lange"
+                "name": "Jonathan M. Lange",
+                "twitter": "mumak"
             }
         ]
     }
