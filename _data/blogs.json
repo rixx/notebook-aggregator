@@ -47,5 +47,16 @@
                 "email": "mordecai@malignat.us"
             }
         ]
+    },
+    {
+        "url": "https://notes.jml.io",
+        "name": "jml's notebook",
+        "description": "Thoughts from Jonathan M. Lange",
+        "feed": "https://notes.jml.io/feed.xml",
+        "authors": [
+            {
+                "name": "Jonathan M. Lange"
+            }
+        ]
     }
 ]
