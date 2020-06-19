@@ -59,5 +59,15 @@
                 "twitter": "mumak"
             }
         ]
+    },
+    {
+        "url": "https://notebook.plaindrops.de/",
+        "name": "mere musings",
+        "feed": "https://notebook.plaindrops.de/rss.xml",
+        "authors": [
+            {
+                "name": "Andy Drop"
+            }
+        ]
     }
 ]
