@@ -69,5 +69,18 @@
                 "name": "Andy Drop"
             }
         ]
+    },
+    {
+        "url": "https://www.poggie.de/category/notebook/",
+        "name": "Poggie's Notebook",
+        "description": "Writing practice, random rambling and rants.",
+        "feed": "https://www.poggie.de/category/notebook/feed/",
+        "authors": [
+            {
+                "name": "Poggie",
+                "twitter": "PoggieDO",
+                "url": "https://poggie.de"
+            }
+        ]
     }
 ]
