@@ -82,5 +82,17 @@
                 "url": "https://poggie.de"
             }
         ]
+    },
+    {
+        "url": "http://notebook.ohuiginn.net/",
+        "name": "Dan's Notebook",
+        "feed": "http://notebook.ohuiginn.net/feed.xml",
+        "authors": [
+            {
+                "name": "Dan O'Huiginn",
+                "twitter": "danohu",
+                "email": "daniel@ohuiginn.net"
+            }
+        ]
     }
 ]
