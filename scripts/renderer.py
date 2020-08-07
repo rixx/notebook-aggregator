@@ -75,6 +75,8 @@ def build_site():
             except Exception as e:
                 print(f"Could not get feed for {blog['name']}: {e}")
                 continue
+            if not feed_entries:
+                continue
             all_feed_entries += feed_entries
             blog["last_post"] = feed_entries[0]
             blog["sort_date"] = get_date(feed_entries[0])
