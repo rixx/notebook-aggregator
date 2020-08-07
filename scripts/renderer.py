@@ -84,8 +84,8 @@ def build_site():
                 blog["sort_date"] = date
 
     blogs = sorted(
-        blogs,
-        key=lambda x: (x.get("sort_date") or dt.datetime(1970, 1, 1), x["name"]),
+        [blog for blog in blogs if blog.get("sort_date")],
+        key=lambda x: (x.get("sort_date"), x["name"]),
         reverse=True,
     )
     feed_entries = sort_feed_entries(all_feed_entries)
