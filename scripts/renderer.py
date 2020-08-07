@@ -39,7 +39,7 @@ def get_date(entry):
     return (
         getattr(entry, "published_parsed", None)
         or getattr(entry, "updated_parsed", None)
-        or dt.datetime(1970, 1, 1)
+        or None
     )
 
 
@@ -79,7 +79,9 @@ def build_site():
                 continue
             all_feed_entries += feed_entries
             blog["last_post"] = feed_entries[0]
-            blog["sort_date"] = get_date(feed_entries[0])
+            date = get_date(feed_entries[0])
+            if date:
+                blog["sort_date"] = date
 
     blogs = sorted(
         blogs,
