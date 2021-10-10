@@ -94,5 +94,27 @@
                 "email": "daniel@ohuiginn.net"
             }
         ]
+    },
+    {
+        "url": "https://doismellburning.tumblr.com/",
+        "name": "Do I Smell Burning?",
+        "feed": "https://doismellburning.tumblr.com/rss",
+        "authors": [
+            {
+                "name": "Kristian Glass",
+                "twitter": "doismellburning"
+            }
+        ]
+    },
+    {
+        "url": "https://lucykeer.com/notebucket/",
+        "name": "Notebucket",
+        "feed": "https://lucykeer.com/notebucket/rss/",
+        "authors": [
+            {
+                "name": "Lucy Keer",
+                "twitter": "drossbucket"
+            }
+        ]
     }
 ]
