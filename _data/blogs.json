@@ -116,5 +116,17 @@
                 "twitter": "drossbucket"
             }
         ]
+    },
+    {
+        "url": "https://notebook.wesleyac.com",
+        "name": "Wesley’s Notebook",
+        "feed": "https://notebook.wesleyac.com/atom.xml",
+        "authors": [
+            {
+                "name": "Wesley Aptekar-Cassels",
+                "twitter": "WAptekar",
+                "email": "me@wesleyac.com"
+            }
+        ]
     }
 ]
