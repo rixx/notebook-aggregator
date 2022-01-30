@@ -11,5 +11,5 @@ def cli():
 
 @cli.command()
 def build():
-    """ Build the site, putting output into _html/ """
+    """Build the site, putting output into _html/"""
     build_site()

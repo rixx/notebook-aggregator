@@ -91,11 +91,15 @@ def build_site():
     feed_entries = sort_feed_entries(all_feed_entries)
 
     render(
-        "index.html", "index.html", blogs=blogs,
+        "index.html",
+        "index.html",
+        blogs=blogs,
     )
 
     render(
-        "feed.xml", "feed.xml", feed_entries=feed_entries,
+        "feed.xml",
+        "feed.xml",
+        feed_entries=feed_entries,
     )
 
     print("✨ Rendered HTML files to _html ✨")
