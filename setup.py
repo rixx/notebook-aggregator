@@ -13,7 +13,7 @@ setup(
     install_requires=[
         "click",
         "feedparser",
-        "jinja2==2.11.*",
+        "jinja2==3.0.*",
         "markdown==3.1.*",
         "python-dateutil",
         "requests",
